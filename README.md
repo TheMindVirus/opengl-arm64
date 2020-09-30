@@ -27,6 +27,17 @@ Target Architecture for some of the projects in the main solution folder have be
 Project Properties->Linker->Advanced->Target Machine /MACHINE:X86 (this should not exist!)
 ```
 
+Windows folder names have a length restriction preventing upload to GitHub...
+```
+File "./builddir/subprojects/zlib-1.2.11/b0b5972@@Windows resource for file 'subprojects_zlib-1.2.11_win32_zlib1.rc'@cus"
+Renamed to: "./builddir/subprojects/zlib-1.2.11/b0b5972@@'@cus" (post-build)
+```
+
+GitHub on Windows tries to change CR/LF instead of keeping them pure which breaks some projects...
+```
+cmd: git config --global core.autocrlf false
+```
+
 ### WARNING! Please do not clean the build.
 Mid-build changes have been applied to ensure successful compilation.
 #### This software is provided as is without warranty, with the hope that it may be useful for technological education.
