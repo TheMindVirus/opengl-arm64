@@ -29,7 +29,7 @@ Project Properties->Linker->Advanced->Target Machine /MACHINE:X86 (this should n
 
 #### Windows folder names have a length restriction preventing upload to GitHub...
 ```
-File "./builddir/subprojects/zlib-1.2.11/b0b5972@@Windows resource for file 'subprojects_zlib-1.2.11_win32_zlib1.rc'@cus"
+Folder "./builddir/subprojects/zlib-1.2.11/b0b5972@@Windows resource for file 'subprojects_zlib-1.2.11_win32_zlib1.rc'@cus/"
 Renamed to: "./builddir/subprojects/zlib-1.2.11/b0b5972@@'@cus" (post-build)
 ```
 
