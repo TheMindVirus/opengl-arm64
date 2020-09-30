@@ -35,7 +35,7 @@ Renamed to: "./builddir/subprojects/zlib-1.2.11/b0b5972@@'@cus" (post-build)
 
 GitHub on Windows tries to change CR/LF instead of keeping them pure which breaks some projects...
 ```
-cmd: git config --global core.autocrlf false
+git config --global core.autocrlf false
 ```
 
 ### WARNING! Please do not clean the build.
