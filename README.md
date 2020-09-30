@@ -24,7 +24,7 @@ Visual Studio .vcxproj files when included as generated folders do not include n
 
 Target Architecture for some of the projects in the main solution folder have been deliberately set to x86...
 ```
-(Remove) Project Properties->Linker->Advanced->Target Machine /MACHINE:X86 (this should not exist!)
+Project Properties->Linker->Advanced->Target Machine /MACHINE:X86 (this should not exist!)
 ```
 
 ### WARNING! Please do not clean the build.
