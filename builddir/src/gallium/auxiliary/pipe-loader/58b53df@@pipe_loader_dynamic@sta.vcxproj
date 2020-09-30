@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debugoptimized|ARM64">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debugoptimized|Win32">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CC8CA4D5-885F-410D-A603-3AEE6EBCF4DF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>pipe_loader_dynamic</RootNamespace>
+    <Platform>Win32</Platform>
+    <ProjectName>pipe_loader_dynamic</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level2</WarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions />
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\..\..\src\util\libxmlconfig.a;..\..\..\..\src\util\libmesa_util.a;..\..\..\..\src\util\format\libmesa_format.a;..\..\..\..\subprojects\zlib-1.2.11\z.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)libpipe_loader_dynamic.a</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <ProgramDataBaseFileName>$(OutDir}pipe_loader_dynamic.pdb</ProgramDataBaseFileName>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>.\</OutDir>
+    <IntDir>58b53df@@pipe_loader_dynamic@sta\</IntDir>
+    <TargetName>libpipe_loader_dynamic</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\src\gallium\auxiliary/pipe-loader\meson.build" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\..\..\..\src\gallium\auxiliary/pipe-loader\pipe_loader.h" />
+    <CLInclude Include="..\..\..\..\..\src\gallium\auxiliary/pipe-loader\pipe_loader_priv.h" />
+    <CLInclude Include="..\..\..\..\..\src\gallium\auxiliary/pipe-loader\driinfo_gallium.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLCompile Include="..\..\..\..\..\src\gallium\auxiliary/pipe-loader\pipe_loader.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions);DROP_PIPE_LOADER_MISC;PIPE_SEARCH_DIR="c:/lib/gallium-pipe"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>58b53df@@pipe_loader_dynamic@sta;.;..\..\..\..\..\src\gallium\auxiliary/pipe-loader;..\..\..\..\..\src\util\.;..\..\..\util;..\..\..\..\..\src\loader\.;..\..\..\loader;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;..\..\..\..\..\src\gallium/auxiliary;..;..\..\..\..\..\src\gallium\winsys;..\..\winsys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)pipe_loader.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\..\..\src\gallium\auxiliary/pipe-loader\pipe_loader_sw.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions);DROP_PIPE_LOADER_MISC;PIPE_SEARCH_DIR="c:/lib/gallium-pipe"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>58b53df@@pipe_loader_dynamic@sta;.;..\..\..\..\..\src\gallium\auxiliary/pipe-loader;..\..\..\..\..\src\util\.;..\..\..\util;..\..\..\..\..\src\loader\.;..\..\..\loader;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;..\..\..\..\..\src\gallium/auxiliary;..;..\..\..\..\..\src\gallium\winsys;..\..\winsys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)pipe_loader_sw.c.obj</ObjectFileName>
+    </CLCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\REGEN.vcxproj">
+      <Project>{40570251-823D-435D-A3AE-065BC6D5B97C}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\util\719bc35@@xmlconfig@sta.vcxproj">
+      <Project>{8445883D-BB04-4D08-803C-6A91D9AEF41E}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

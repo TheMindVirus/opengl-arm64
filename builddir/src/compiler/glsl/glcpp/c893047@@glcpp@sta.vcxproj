@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debugoptimized|ARM64">
+			<Configuration>debugoptimized</Configuration>
+			<Platform>ARM64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="debugoptimized|Win32">
+			<Configuration>debugoptimized</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{F9954606-F57B-46BF-8449-9D05E0001050}</ProjectGuid>
+		<Keyword>Win32Proj</Keyword>
+		<RootNamespace>glcpp</RootNamespace>
+		<Platform>Win32</Platform>
+		<ProjectName>glcpp</ProjectName>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<PlatformToolset>v142</PlatformToolset>
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<WarningLevel>Level2</WarningLevel>
+			<InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions/>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+			<AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\..\..\src\util\libmesa_util.a;..\..\..\..\src\util\format\libmesa_format.a;..\..\..\..\subprojects\zlib-1.2.11\z.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)libglcpp.a</OutputFile>
+			<SubSystem>Windows</SubSystem>
+			<ProgramDataBaseFileName>$(OutDir}glcpp.pdb</ProgramDataBaseFileName>
+			<TargetMachine>MachineX86</TargetMachine>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+		</Link>
+	</ItemDefinitionGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>c893047@@glcpp@sta\</IntDir>
+		<TargetName>libglcpp</TargetName>
+		<TargetExt>.a</TargetExt>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\..\..\..\..\src\compiler\glsl\glcpp\meson.build"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLInclude Include="..\..\..\..\..\src\compiler\glsl\glcpp\glcpp.h"/>
+		<CLInclude Include="..\..\..\..\src\compiler\glsl\glcpp\glcpp-parse.h"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLCompile Include="..\..\..\..\..\src\compiler\glsl\glcpp\pp.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions) &quot;-FIinttypes.h&quot;</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>c893047@@glcpp@sta;.;..\..\..\..\..\src\compiler\glsl\glcpp;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;..\..\..\..\..\src\mapi;..\..\..\mapi;..\..\..\..\..\src\mesa;..\..\..\mesa;..\..\..\..\..\src\gallium/include;..\..\..\gallium\include;..\..\..\..\..\src\gallium/auxiliary;..\..\..\gallium\auxiliary;..\..\..\..\..\src\util\.;..\..\..\util;..\..\..\..\..\subprojects\zlib-1.2.11\.;..\..\..\..\subprojects\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)pp.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\src\compiler\glsl\glcpp\glcpp-lex.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions) &quot;-FIinttypes.h&quot;</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>c893047@@glcpp@sta;.;..\..\..\..\..\src\compiler\glsl\glcpp;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;..\..\..\..\..\src\mapi;..\..\..\mapi;..\..\..\..\..\src\mesa;..\..\..\mesa;..\..\..\..\..\src\gallium/include;..\..\..\gallium\include;..\..\..\..\..\src\gallium/auxiliary;..\..\..\gallium\auxiliary;..\..\..\..\..\src\util\.;..\..\..\util;..\..\..\..\..\subprojects\zlib-1.2.11\.;..\..\..\..\subprojects\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\src\compiler\glsl\glcpp\glcpp-parse.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions) &quot;-FIinttypes.h&quot;</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>c893047@@glcpp@sta;.;..\..\..\..\..\src\compiler\glsl\glcpp;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;..\..\..\..\..\src\mapi;..\..\..\mapi;..\..\..\..\..\src\mesa;..\..\..\mesa;..\..\..\..\..\src\gallium/include;..\..\..\gallium\include;..\..\..\..\..\src\gallium/auxiliary;..\..\..\gallium\auxiliary;..\..\..\..\..\src\util\.;..\..\..\util;..\..\..\..\..\subprojects\zlib-1.2.11\.;..\..\..\..\subprojects\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</CLCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\REGEN.vcxproj">
+			<Project>{40570251-823D-435D-A3AE-065BC6D5B97C}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\util\719bc35@@mesa_util@sta.vcxproj">
+			<Project>{D12B3F7F-31AD-4FAF-BBC1-C91B8C856727}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\..\subprojects\zlib-1.2.11\b0b5972@@z@sha.vcxproj">
+			<Project>{E879E5D1-A8F2-45BD-A2A5-8934ADBAF5D2}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include=".\c893047@@glcpp-lex.c@cus.vcxproj">
+			<Project>{40B62E41-34FF-4034-90C7-36AC14175AC0}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include=".\c893047@@glcpp-parse.[ch]@cus.vcxproj">
+			<Project>{B38CC843-6D53-4336-90B4-26EC1F7FCB8E}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debugoptimized|ARM64">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debugoptimized|Win32">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{57DDAAF2-6E7B-4247-B83E-AA695831BBEB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>nir_builder_opcodes.h</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType />
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>.\</OutDir>
+    <IntDir>c6d7332@@nir_builder_opcodes.h@cus\</IntDir>
+    <TargetName>nir_builder_opcodes.h</TargetName>
+  </PropertyGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\custom_target.rule">
+      <Command>setlocal
+"C:\Python38\Scripts\meson" "--internal" "exe" "--unpickle" "C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\meson_exe_python.exe_5d59e0b77483f8832f6aabf75ae4881409864c83.dat"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Outputs>C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\src\compiler\nir\nir_builder_opcodes.h</Outputs>
+      <AdditionalInputs>C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\meson_exe_python.exe_5d59e0b77483f8832f6aabf75ae4881409864c83.dat;C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\..\src\compiler\nir\nir_builder_opcodes_h.py;C:\Python38\python.exe;C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\src\compiler\nir\nir_opcodes.py;C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\src\compiler\nir\nir_intrinsics.py</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\REGEN.vcxproj">
+      <Project>{40570251-823D-435D-A3AE-065BC6D5B97C}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

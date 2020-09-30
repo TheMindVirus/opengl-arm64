@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debugoptimized|ARM64">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debugoptimized|Win32">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1B05A3A8-5371-492B-9DC3-FE2E354F73B8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>glsl_test</RootNamespace>
+    <Platform>Win32</Platform>
+    <ProjectName>glsl_test</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level2</WarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions />
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalOptions>/fixed:no /dynamicbase /nxcompat /incremental:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\..\src\compiler\glsl\libglsl.a;..\..\..\src\compiler\glsl\glcpp\libglcpp.a;..\..\..\src\util\libmesa_util.a;..\..\..\src\util\format\libmesa_format.a;..\..\..\subprojects\zlib-1.2.11\z.lib;..\..\..\src\compiler\nir\libnir.a;..\..\..\src\compiler\libcompiler.a;..\..\..\src\compiler\glsl\libglsl_standalone.a;..\..\..\src\libglsl_util.a;..\..\..\src\compiler\glsl\glcpp\libglcpp_standalone.a;..\..\..\src\getopt\libgetopt.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)glsl_test.exe</OutputFile>
+      <SubSystem>Console</SubSystem>
+      <ProgramDataBaseFileName>$(OutDir}glsl_test.pdb</ProgramDataBaseFileName>
+      <TargetMachine>NotSet</TargetMachine>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>.\</OutDir>
+    <IntDir>1a27c3f@@glsl_test@exe\</IntDir>
+    <TargetName>glsl_test</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\src\compiler\glsl\meson.build" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\..\..\src\compiler\glsl\test_optpass.h" />
+    <CLInclude Include="..\..\..\src\compiler\ir_expression_operation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLCompile Include="..\..\..\..\src\compiler\glsl\test.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++14" "/permissive-" "/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>1a27c3f@@glsl_test@exe;.;..\..\..\..\src\compiler\glsl;..\..\..\..\include\.;..\..\..\include;..\..\..\..\src\.;..\..;..\..\..\..\src\mapi;..\..\mapi;..\..\..\..\src\mesa;..\..\mesa;..\..\..\..\src\gallium/include;..\..\gallium\include;..\..\..\..\src\gallium/auxiliary;..\..\gallium\auxiliary;..\..\..\..\src\getopt\.;..\..\getopt;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)test.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\..\src\compiler\glsl\test_optpass.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++14" "/permissive-" "/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>1a27c3f@@glsl_test@exe;.;..\..\..\..\src\compiler\glsl;..\..\..\..\include\.;..\..\..\include;..\..\..\..\src\.;..\..;..\..\..\..\src\mapi;..\..\mapi;..\..\..\..\src\mesa;..\..\mesa;..\..\..\..\src\gallium/include;..\..\gallium\include;..\..\..\..\src\gallium/auxiliary;..\..\gallium\auxiliary;..\..\..\..\src\getopt\.;..\..\getopt;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)test_optpass.cpp.obj</ObjectFileName>
+    </CLCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\REGEN.vcxproj">
+      <Project>{40570251-823D-435D-A3AE-065BC6D5B97C}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include=".\1a27c3f@@glsl@sta.vcxproj">
+      <Project>{EC030A74-1781-41B1-9F3D-9C3F2DF56015}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include=".\1a27c3f@@glsl_standalone@sta.vcxproj">
+      <Project>{2D27C66C-C681-4D61-B357-071A4E7CA78A}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\25a6634@@glsl_util@sta.vcxproj">
+      <Project>{DF78BFC2-5119-4790-BAFC-BDEE44458D09}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\getopt\f3793cb@@getopt@sta.vcxproj">
+      <Project>{1A4E0449-B40D-4996-BBE1-9A4EC1CD9053}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\7e42b24@@ir_expression_operation.h@cus.vcxproj">
+      <Project>{FBA7C687-5470-4C69-8A7D-27A1781B9A7A}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

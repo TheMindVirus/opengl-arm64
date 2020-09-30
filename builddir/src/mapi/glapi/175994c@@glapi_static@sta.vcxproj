@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debugoptimized|ARM64">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debugoptimized|Win32">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{89E5223B-AB8A-43A2-8A0A-BD132C3BE668}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>glapi_static</RootNamespace>
+    <Platform>Win32</Platform>
+    <ProjectName>glapi_static</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level2</WarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions />
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)libglapi_static.a</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <ProgramDataBaseFileName>$(OutDir}glapi_static.pdb</ProgramDataBaseFileName>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>.\</OutDir>
+    <IntDir>175994c@@glapi_static@sta\</IntDir>
+    <TargetName>libglapi_static</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\src\mapi\glapi\meson.build" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\..\..\src\mapi\glapi\glapi.h" />
+    <CLInclude Include="..\..\..\..\src\mapi\glapi\glapi_priv.h" />
+    <CLInclude Include="..\..\..\..\src\mapi\u_current.h" />
+    <CLInclude Include="..\..\..\..\src\mapi\u_execmem.h" />
+    <CLInclude Include="..\..\..\src\mapi\glapi\gen\glapitable.h" />
+    <CLInclude Include="..\..\..\src\mapi\glapi\gen\glapi_mapi_tmp.h" />
+    <CLInclude Include="..\..\..\src\mapi\glapi\gen\glprocs.h" />
+    <CLInclude Include="..\..\..\src\mapi\glapi\gen\glapitemp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLCompile Include="..\..\..\..\src\mapi\glapi\glapi_dispatch.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions);MAPI_MODE_UTIL;_GDI32_;BUILD_GL32;KHRONOS_DLL_EXPORTS;_GLAPI_NO_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>175994c@@glapi_static@sta;.;..\..\..\..\src\mapi\glapi;..\..\..\..\src\mesa;..\..\mesa;..\..\..\..\include\.;..\..\..\include;..\..\..\..\src\.;..\..;..\..\..\..\src\mapi;..;gen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)glapi_dispatch.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\..\src\mapi\glapi\glapi_entrypoint.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions);MAPI_MODE_UTIL;_GDI32_;BUILD_GL32;KHRONOS_DLL_EXPORTS;_GLAPI_NO_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>175994c@@glapi_static@sta;.;..\..\..\..\src\mapi\glapi;..\..\..\..\src\mesa;..\..\mesa;..\..\..\..\include\.;..\..\..\include;..\..\..\..\src\.;..\..;..\..\..\..\src\mapi;..;gen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)glapi_entrypoint.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\..\src\mapi\glapi\glapi_getproc.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions);MAPI_MODE_UTIL;_GDI32_;BUILD_GL32;KHRONOS_DLL_EXPORTS;_GLAPI_NO_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>175994c@@glapi_static@sta;.;..\..\..\..\src\mapi\glapi;..\..\..\..\src\mesa;..\..\mesa;..\..\..\..\include\.;..\..\..\include;..\..\..\..\src\.;..\..;..\..\..\..\src\mapi;..;gen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)glapi_getproc.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\..\src\mapi\glapi\glapi_nop.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions);MAPI_MODE_UTIL;_GDI32_;BUILD_GL32;KHRONOS_DLL_EXPORTS;_GLAPI_NO_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>175994c@@glapi_static@sta;.;..\..\..\..\src\mapi\glapi;..\..\..\..\src\mesa;..\..\mesa;..\..\..\..\include\.;..\..\..\include;..\..\..\..\src\.;..\..;..\..\..\..\src\mapi;..;gen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)glapi_nop.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\..\src\mapi\glapi\glapi.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions);MAPI_MODE_UTIL;_GDI32_;BUILD_GL32;KHRONOS_DLL_EXPORTS;_GLAPI_NO_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>175994c@@glapi_static@sta;.;..\..\..\..\src\mapi\glapi;..\..\..\..\src\mesa;..\..\mesa;..\..\..\..\include\.;..\..\..\include;..\..\..\..\src\.;..\..;..\..\..\..\src\mapi;..;gen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)glapi.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\..\src\mapi\u_current.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions);MAPI_MODE_UTIL;_GDI32_;BUILD_GL32;KHRONOS_DLL_EXPORTS;_GLAPI_NO_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>175994c@@glapi_static@sta;.;..\..\..\..\src\mapi\glapi;..\..\..\..\src\mesa;..\..\mesa;..\..\..\..\include\.;..\..\..\include;..\..\..\..\src\.;..\..;..\..\..\..\src\mapi;..;gen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir).._u_current.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\..\src\mapi\u_execmem.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions);MAPI_MODE_UTIL;_GDI32_;BUILD_GL32;KHRONOS_DLL_EXPORTS;_GLAPI_NO_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>175994c@@glapi_static@sta;.;..\..\..\..\src\mapi\glapi;..\..\..\..\src\mesa;..\..\mesa;..\..\..\..\include\.;..\..\..\include;..\..\..\..\src\.;..\..;..\..\..\..\src\mapi;..;gen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir).._u_execmem.c.obj</ObjectFileName>
+    </CLCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\REGEN.vcxproj">
+      <Project>{40570251-823D-435D-A3AE-065BC6D5B97C}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="gen\47f0d7f@@glapitable.h@cus.vcxproj">
+      <Project>{5D0F899B-9B7F-4629-AAF8-1CF190802AEF}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="gen\47f0d7f@@glapi_mapi_tmp.h@cus.vcxproj">
+      <Project>{6E06F3D0-7576-402B-9388-8B055C8CF08C}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="gen\47f0d7f@@glprocs.h@cus.vcxproj">
+      <Project>{B2FB79D1-D0B8-4C1A-8CF9-2EA1190FE960}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="gen\47f0d7f@@glapitemp.h@cus.vcxproj">
+      <Project>{20F750F9-F361-4208-8073-D40BC641F418}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+﻿  glsl_types.cpp
+  nir_types.cpp
+  shader_enums.c
+  7e42b24@@compiler@sta.vcxproj -> C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\src\compiler\.\libcompiler.a

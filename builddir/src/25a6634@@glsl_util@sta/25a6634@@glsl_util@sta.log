@@ -1,0 +1,5 @@
+﻿  extensions_table.c
+  prog_parameter.c
+  symbol_table.c
+  dummy_errors.c
+  25a6634@@glsl_util@sta.vcxproj -> C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\src\.\libglsl_util.a

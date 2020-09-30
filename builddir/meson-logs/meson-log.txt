@@ -1,0 +1,8287 @@
+Build started at 2020-09-30T00:40:23.451105
+Main binary: c:\python38\python.exe
+Build Options: -Dbackend=vs
+Python system: Windows
+The Meson build system
+Version: 0.55.1
+Source dir: C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0
+Build dir: C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir
+Build type: native build
+Program python found: YES
+Running command: C:\Python38\python.EXE bin/meson_get_version.py
+--- stdout ---
+20.2.0
+--- stderr ---
+
+
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Project name: mesa
+Project version: 20.2.0
+None of 'CC' are defined in the environment, not changing global flags.
+None of 'CFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: cl
+Is cross compiler: False.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\sanitycheckc.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\sanitycheckc.exe /nologo /showIncludes /link
+Sanity check compile stdout:
+sanitycheckc.c
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\sanitycheckc.exe
+C compiler for the build machine: cl (msvc 19.27.29111)
+C linker for the build machine: link link 14.27.29111.0
+None of 'AR' are defined in the environment, not changing global flags.
+None of 'CXX' are defined in the environment, not changing global flags.
+None of 'CXXFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity testing C++ compiler: cl
+Is cross compiler: False.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\sanitycheckcpp.cc /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\sanitycheckcpp.exe /nologo /showIncludes /link
+Sanity check compile stdout:
+sanitycheckcpp.cc
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\sanitycheckcpp.exe
+C++ compiler for the build machine: cl (msvc 19.27.29111)
+C++ linker for the build machine: link link 14.27.29111.0
+None of 'CC' are defined in the environment, not changing global flags.
+None of 'CFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: cl
+Is cross compiler: False.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\sanitycheckc.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\sanitycheckc.exe /nologo /showIncludes /link
+Sanity check compile stdout:
+sanitycheckc.c
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\sanitycheckc.exe
+C compiler for the host machine: cl (msvc 19.27.29111)
+C linker for the host machine: link link 14.27.29111.0
+None of 'AR' are defined in the environment, not changing global flags.
+None of 'CXX' are defined in the environment, not changing global flags.
+None of 'CXXFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity testing C++ compiler: cl
+Is cross compiler: False.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\sanitycheckcpp.cc /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\sanitycheckcpp.exe /nologo /showIncludes /link
+Sanity check compile stdout:
+sanitycheckcpp.cc
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\sanitycheckcpp.exe
+C++ compiler for the host machine: cl (msvc 19.27.29111)
+C++ linker for the host machine: link link 14.27.29111.0
+Auto detected Visual Studio backend: vs2019
+Build machine cpu family: x86
+Build machine cpu: x86
+Host machine cpu family: x86
+Host machine cpu: x86
+Target machine cpu family: x86
+Target machine cpu: x86
+Program C:\Python38\python found: YES (C:\Python38\python.exe)
+Running command: C:\Python38\python.exe -c 
+from distutils.version import StrictVersion
+import mako
+assert StrictVersion(mako.__version__) > StrictVersion("0.8.0")
+  
+--- stdout ---
+
+--- stderr ---
+
+
+Running compile:
+Working directory:  C:\Users\cotaa\AppData\Local\Temp\tmpijcu10ua
+Command line:  cl C:\Users\cotaa\AppData\Local\Temp\tmpijcu10ua\testfile.c /nologo /showIncludes /EP /nologo /showIncludes /EP /Od 
+
+Code:
+ 
+        #include <errno.h>
+        #ifndef ETIME
+        # define ETIME
+        #endif
+        "MESON_GET_DEFINE_DELIMITER"
+ETIME
+Compiler stdout:
+ 
+
+        
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+    
+
+
+        
+
+
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma region Input Buffer SAL 1 compatibility macros
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma endregion Input Buffer SAL 1 compatibility macros
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma once
+
+
+
+#pragma pack(push, 8)
+
+
+
+    
+
+
+        
+    
+
+
+
+
+
+    
+
+
+        
+    
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+#pragma warning(push)
+#pragma warning(disable:   4514 4820 )
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+        typedef unsigned int uintptr_t;
+    
+
+
+
+    
+    
+
+
+        typedef char* va_list;
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+#pragma warning(pop) 
+#pragma pack(pop)
+
+
+#pragma warning(push)
+#pragma warning(disable:   4514 4820 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+
+__pragma(pack(push, 8))
+
+
+
+
+    
+
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+        
+    
+
+
+
+    
+
+
+        
+    
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+    typedef unsigned int     size_t;
+    typedef int              ptrdiff_t;
+    typedef int              intptr_t;
+
+
+
+
+
+
+
+
+
+    typedef _Bool __vcrt_bool;
+
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+
+    
+    typedef unsigned short wchar_t;
+
+
+
+    
+
+
+        
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+        
+    
+
+    
+
+
+
+
+
+
+        
+        
+    
+
+    
+
+
+
+
+
+
+
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+        
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+        
+    
+
+
+
+
+
+
+    void __cdecl __security_init_cookie(void);
+
+    
+        void __fastcall __security_check_cookie(  uintptr_t _StackCookie);
+        __declspec(noreturn) void __cdecl __report_gsfailure(void);
+    
+
+
+
+
+
+extern uintptr_t __security_cookie;
+
+
+    
+    
+    
+
+
+__pragma(pack(pop))
+
+#pragma warning(pop) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+        
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+
+
+    
+
+
+        
+    
+
+
+#pragma warning(push)
+#pragma warning(disable: 4324  4514 4574 4710 4793 4820 4995 4996 28719 28726 28727 )
+
+
+__pragma(pack(push, 8))
+
+
+
+
+
+
+
+    
+
+
+
+
+        
+    
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+        
+    
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+        
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    typedef _Bool __crt_bool;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+
+
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+        
+    
+
+
+
+
+
+
+
+    
+
+
+
+ 
+
+
+
+
+
+
+  
+
+
+   
+  
+ 
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+
+
+    
+
+
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ void __cdecl _invalid_parameter_noinfo(void);
+ __declspec(noreturn) void __cdecl _invalid_parameter_noinfo_noreturn(void);
+
+__declspec(noreturn)
+ void __cdecl _invoke_watson(
+      wchar_t const* _Expression,
+      wchar_t const* _FunctionName,
+      wchar_t const* _FileName,
+            unsigned int _LineNo,
+            uintptr_t _Reserved);
+
+
+    
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+        
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+        
+    
+
+
+
+    
+
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+        
+
+
+            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+        
+
+
+
+    
+
+
+
+    
+        
+    
+
+
+
+
+
+    
+        
+        
+        
+    
+
+
+
+
+
+    
+        
+              
+        
+
+
+    
+
+
+
+
+
+    
+        
+    
+
+
+
+
+
+    
+        
+    
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+typedef int                           errno_t;
+typedef unsigned short                wint_t;
+typedef unsigned short                wctype_t;
+typedef long                          __time32_t;
+typedef __int64                       __time64_t;
+
+typedef struct __crt_locale_data_public
+{
+      unsigned short const* _locale_pctype;
+      int _locale_mb_cur_max;
+               unsigned int _locale_lc_codepage;
+} __crt_locale_data_public;
+
+typedef struct __crt_locale_pointers
+{
+    struct __crt_locale_data*    locinfo;
+    struct __crt_multibyte_data* mbcinfo;
+} __crt_locale_pointers;
+
+typedef __crt_locale_pointers* _locale_t;
+
+typedef struct _Mbstatet
+{ 
+    unsigned long _Wchar;
+    unsigned short _Byte, _State;
+} _Mbstatet;
+
+typedef _Mbstatet mbstate_t;
+
+
+
+
+
+
+
+
+
+
+    
+
+
+        typedef __time64_t time_t;
+    
+
+
+
+
+    
+
+
+
+    typedef size_t rsize_t;
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+
+        
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+
+            
+
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+            
+
+
+
+            
+
+
+
+            
+
+
+
+            
+
+
+            
+
+
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+            
+
+
+
+
+            
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+__pragma(pack(pop))
+
+
+#pragma warning(pop) 
+
+
+#pragma warning(push)
+#pragma warning(disable: 4324  4514 4574 4710 4793 4820 4995 4996 28719 28726 28727 )
+
+
+__pragma(pack(push, 8))
+
+
+
+
+     int* __cdecl _errno(void);
+    
+
+     errno_t __cdecl _set_errno(  int _Value);
+     errno_t __cdecl _get_errno(  int* _Value);
+
+     unsigned long* __cdecl __doserrno(void);
+    
+
+     errno_t __cdecl _set_doserrno(  unsigned long _Value);
+     errno_t __cdecl _get_doserrno(  unsigned long * _Value);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+__pragma(pack(pop))
+
+#pragma warning(pop) 
+
+
+        
+
+
+        "MESON_GET_DEFINE_DELIMITER"
+137
+
+Compiler stderr:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\errno.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+
+Fetching value of define "ETIME" : 137 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp7hvogilf
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp7hvogilf\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp7hvogilf\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define bswap32 meson_disable_define_of_bswap32
+        
+        #include <limits.h>
+        #undef bswap32
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char bswap32 (void);
+        
+        #if defined __stub_bswap32 || defined __stub___bswap32
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return bswap32 ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _bswap32 referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp7hvogilf\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "bswap32" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpsptu8rrm
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpsptu8rrm\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpsptu8rrm\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define bswap64 meson_disable_define_of_bswap64
+        
+        #include <limits.h>
+        #undef bswap64
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char bswap64 (void);
+        
+        #if defined __stub_bswap64 || defined __stub___bswap64
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return bswap64 ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _bswap64 referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpsptu8rrm\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "bswap64" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp864gmlt2
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp864gmlt2\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp864gmlt2\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define clz meson_disable_define_of_clz
+        
+        #include <limits.h>
+        #undef clz
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char clz (void);
+        
+        #if defined __stub_clz || defined __stub___clz
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return clz ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _clz referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp864gmlt2\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "clz" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp2vrh2tzf
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp2vrh2tzf\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp2vrh2tzf\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define clzll meson_disable_define_of_clzll
+        
+        #include <limits.h>
+        #undef clzll
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char clzll (void);
+        
+        #if defined __stub_clzll || defined __stub___clzll
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return clzll ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _clzll referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp2vrh2tzf\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "clzll" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpjyvw404g
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpjyvw404g\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpjyvw404g\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define ctz meson_disable_define_of_ctz
+        
+        #include <limits.h>
+        #undef ctz
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char ctz (void);
+        
+        #if defined __stub_ctz || defined __stub___ctz
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return ctz ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _ctz referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpjyvw404g\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "ctz" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpkjpo40j3
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpkjpo40j3\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpkjpo40j3\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define expect meson_disable_define_of_expect
+        
+        #include <limits.h>
+        #undef expect
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char expect (void);
+        
+        #if defined __stub_expect || defined __stub___expect
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return expect ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _expect referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpkjpo40j3\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "expect" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpwjxgc4qu
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpwjxgc4qu\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpwjxgc4qu\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define ffs meson_disable_define_of_ffs
+        
+        #include <limits.h>
+        #undef ffs
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char ffs (void);
+        
+        #if defined __stub_ffs || defined __stub___ffs
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return ffs ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _ffs referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpwjxgc4qu\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "ffs" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp324upzxw
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp324upzxw\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp324upzxw\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define ffsll meson_disable_define_of_ffsll
+        
+        #include <limits.h>
+        #undef ffsll
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char ffsll (void);
+        
+        #if defined __stub_ffsll || defined __stub___ffsll
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return ffsll ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _ffsll referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp324upzxw\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "ffsll" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp8quc4fhf
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp8quc4fhf\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp8quc4fhf\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define popcount meson_disable_define_of_popcount
+        
+        #include <limits.h>
+        #undef popcount
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char popcount (void);
+        
+        #if defined __stub_popcount || defined __stub___popcount
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return popcount ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _popcount referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp8quc4fhf\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "popcount" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpcdb021x4
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpcdb021x4\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpcdb021x4\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define popcountll meson_disable_define_of_popcountll
+        
+        #include <limits.h>
+        #undef popcountll
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char popcountll (void);
+        
+        #if defined __stub_popcountll || defined __stub___popcountll
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return popcountll ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _popcountll referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpcdb021x4\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "popcountll" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpsutka4v2
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpsutka4v2\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpsutka4v2\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define unreachable meson_disable_define_of_unreachable
+        
+        #include <limits.h>
+        #undef unreachable
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char unreachable (void);
+        
+        #if defined __stub_unreachable || defined __stub___unreachable
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return unreachable ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _unreachable referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpsutka4v2\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "unreachable" : NO 
+Compiler for C supports function attribute const: NO 
+Compiler for C supports function attribute flatten: NO 
+Compiler for C supports function attribute malloc: NO 
+Compiler for C supports function attribute pure: NO 
+Compiler for C supports function attribute unused: NO 
+Compiler for C supports function attribute warn_unused_result: NO 
+Compiler for C supports function attribute weak: NO 
+Compiler for C supports function attribute format: NO 
+Compiler for C supports function attribute packed: NO 
+Compiler for C supports function attribute returns_nonnull: NO 
+Compiler for C supports function attribute alias: NO 
+Compiler for C supports function attribute noreturn: NO 
+Compiler for C supports function attribute visibility:hidden: NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpjk0xkyd8
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpjk0xkyd8\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpjk0xkyd8\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ __uint128_t foo(void) { return 0; }
+Compiler stdout:
+ testfile.c
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpjk0xkyd8\testfile.c(1): error C2061: syntax error: identifier 'foo'
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpjk0xkyd8\testfile.c(1): error C2059: syntax error: ';'
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpjk0xkyd8\testfile.c(1): error C2059: syntax error: '<parameter-list>'
+
+Compiler stderr:
+ 
+Checking if "__uint128_t" compiles: NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpmwqclash
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpmwqclash\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpmwqclash\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4018 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Compiler for C supports arguments /wd4018: YES 
+Using cached compile:
+Cached command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpmwqclash\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpmwqclash\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4018 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ testfile.c
+
+Cached compiler stderr:
+ 
+Compiler for C++ supports arguments /wd4018: YES (cached)
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpukj7s_l5
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpukj7s_l5\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpukj7s_l5\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4056 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Compiler for C supports arguments /wd4056: YES 
+Using cached compile:
+Cached command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpukj7s_l5\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpukj7s_l5\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4056 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ testfile.c
+
+Cached compiler stderr:
+ 
+Compiler for C++ supports arguments /wd4056: YES (cached)
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpco64b58y
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpco64b58y\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpco64b58y\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4244 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Compiler for C supports arguments /wd4244: YES 
+Using cached compile:
+Cached command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpco64b58y\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpco64b58y\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4244 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ testfile.c
+
+Cached compiler stderr:
+ 
+Compiler for C++ supports arguments /wd4244: YES (cached)
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp0eksu4wf
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp0eksu4wf\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp0eksu4wf\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4267 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Compiler for C supports arguments /wd4267: YES 
+Using cached compile:
+Cached command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp0eksu4wf\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp0eksu4wf\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4267 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ testfile.c
+
+Cached compiler stderr:
+ 
+Compiler for C++ supports arguments /wd4267: YES (cached)
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpzpr80q5k
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpzpr80q5k\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpzpr80q5k\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4305 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Compiler for C supports arguments /wd4305: YES 
+Using cached compile:
+Cached command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpzpr80q5k\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpzpr80q5k\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4305 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ testfile.c
+
+Cached compiler stderr:
+ 
+Compiler for C++ supports arguments /wd4305: YES (cached)
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpzpnuqfkw
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpzpnuqfkw\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpzpnuqfkw\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4351 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Compiler for C supports arguments /wd4351: YES 
+Using cached compile:
+Cached command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpzpnuqfkw\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpzpnuqfkw\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4351 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ testfile.c
+
+Cached compiler stderr:
+ 
+Compiler for C++ supports arguments /wd4351: YES (cached)
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpazzjylpn
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpazzjylpn\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpazzjylpn\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4756 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Compiler for C supports arguments /wd4756: YES 
+Using cached compile:
+Cached command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpazzjylpn\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpazzjylpn\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4756 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ testfile.c
+
+Cached compiler stderr:
+ 
+Compiler for C++ supports arguments /wd4756: YES (cached)
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp7b8zs3fc
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp7b8zs3fc\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp7b8zs3fc\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4800 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Compiler for C supports arguments /wd4800: YES 
+Using cached compile:
+Cached command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp7b8zs3fc\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp7b8zs3fc\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4800 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ testfile.c
+
+Cached compiler stderr:
+ 
+Compiler for C++ supports arguments /wd4800: YES (cached)
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpd67obsvy
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpd67obsvy\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpd67obsvy\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4996 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Compiler for C supports arguments /wd4996: YES 
+Using cached compile:
+Cached command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpd67obsvy\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpd67obsvy\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4996 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ testfile.c
+
+Cached compiler stderr:
+ 
+Compiler for C++ supports arguments /wd4996: YES (cached)
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgw80o_81
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgw80o_81\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgw80o_81\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4291 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Compiler for C supports arguments /wd4291: YES 
+Using cached compile:
+Cached command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgw80o_81\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgw80o_81\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4291 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ testfile.c
+
+Cached compiler stderr:
+ 
+Compiler for C++ supports arguments /wd4291: YES (cached)
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiyfc_76j
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiyfc_76j\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiyfc_76j\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4146 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Compiler for C supports arguments /wd4146: YES 
+Using cached compile:
+Cached command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiyfc_76j\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiyfc_76j\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4146 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ testfile.c
+
+Cached compiler stderr:
+ 
+Compiler for C++ supports arguments /wd4146: YES (cached)
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiuxorzsy
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiuxorzsy\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiuxorzsy\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4200 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Compiler for C supports arguments /wd4200: YES 
+Using cached compile:
+Cached command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiuxorzsy\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiuxorzsy\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4200 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ testfile.c
+
+Cached compiler stderr:
+ 
+Compiler for C++ supports arguments /wd4200: YES (cached)
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpfv1l2brr
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpfv1l2brr\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpfv1l2brr\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4624 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Compiler for C supports arguments /wd4624: YES 
+Using cached compile:
+Cached command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpfv1l2brr\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpfv1l2brr\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od /wd4624 
+
+Code:
+ extern int i;
+int i;
+
+Cached compiler stdout:
+ testfile.c
+
+Cached compiler stderr:
+ 
+Compiler for C++ supports arguments /wd4624: YES (cached)
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmphnyx96z7
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmphnyx96z7\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmphnyx96z7\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od -Wmicrosoft-enum-value 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cl : Command line error D8021 : invalid numeric argument '/Wmicrosoft-enum-value'
+
+Compiler for C supports arguments -Wmicrosoft-enum-value: NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpnm7xrk9x
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpnm7xrk9x\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpnm7xrk9x\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ #include <stdint.h>
+                  int main() {
+                    struct {
+                      uint64_t *v;
+                    } x;
+                    return (int)__atomic_load_n(x.v, __ATOMIC_ACQUIRE) &
+                           (int)__atomic_add_fetch(x.v, (uint64_t)1, __ATOMIC_ACQ_REL);
+
+                  }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\stdint.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpnm7xrk9x\testfile.c(6): error C2065: '__ATOMIC_ACQUIRE': undeclared identifier
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpnm7xrk9x\testfile.c(7): error C2065: '__ATOMIC_ACQ_REL': undeclared identifier
+
+Compiler stderr:
+ 
+Checking if "GCC atomic builtins" compiles: NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmptkft9s8s
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmptkft9s8s\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmptkft9s8s\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ #include <stdint.h>
+                   uint64_t v;
+                   int main() {
+                     return __sync_add_and_fetch(&v, (uint64_t)1);
+                   }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\stdint.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol ___sync_add_and_fetch referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmptkft9s8s\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking if "GCC 64bit atomics" with dependency not-found links: NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpbxohhgr8
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpbxohhgr8\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpbxohhgr8\output.exe /nologo /showIncludes /nologo /showIncludes /Od ws2_32.lib /link 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ 
+Library ws2_32 found: YES
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpwdwkj6hd
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpwdwkj6hd\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpwdwkj6hd\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ 
+        #include <sys/sysmacros.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef major
+                major;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ testfile.c
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpwdwkj6hd\testfile.c(2): fatal error C1083: Cannot open include file: 'sys/sysmacros.h': No such file or directory
+
+Compiler stderr:
+ 
+Header <sys/sysmacros.h> has symbol "major" : NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmplbtq5uls
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmplbtq5uls\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmplbtq5uls\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ 
+        #include <sys/mkdev.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef major
+                major;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ testfile.c
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmplbtq5uls\testfile.c(2): fatal error C1083: Cannot open include file: 'sys/mkdev.h': No such file or directory
+
+Compiler stderr:
+ 
+Header <sys/mkdev.h> has symbol "major" : NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmph6a4oykk
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmph6a4oykk\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmph6a4oykk\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ #include <sys/types.h>
+        #include <sys/sysctl.h>
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/types.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmph6a4oykk\testfile.c(2): fatal error C1083: Cannot open include file: 'sys/sysctl.h': No such file or directory
+
+Compiler stderr:
+ 
+Check usable header "sys/sysctl.h" : NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpa2zbkznr
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpa2zbkznr\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpa2zbkznr\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ 
+        #include <xlocale.h>
+Compiler stdout:
+ testfile.c
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpa2zbkznr\testfile.c(2): fatal error C1083: Cannot open include file: 'xlocale.h': No such file or directory
+
+Compiler stderr:
+ 
+Check usable header "xlocale.h" : NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpcy1jgg5f
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpcy1jgg5f\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpcy1jgg5f\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ 
+        #include <linux/futex.h>
+Compiler stdout:
+ testfile.c
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpcy1jgg5f\testfile.c(2): fatal error C1083: Cannot open include file: 'linux/futex.h': No such file or directory
+
+Compiler stderr:
+ 
+Check usable header "linux/futex.h" : NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpktff_vmp
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpktff_vmp\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpktff_vmp\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ 
+        #include <endian.h>
+Compiler stdout:
+ testfile.c
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpktff_vmp\testfile.c(2): fatal error C1083: Cannot open include file: 'endian.h': No such file or directory
+
+Compiler stderr:
+ 
+Check usable header "endian.h" : NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpm88cwm44
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpm88cwm44\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpm88cwm44\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ 
+        #include <dlfcn.h>
+Compiler stdout:
+ testfile.c
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpm88cwm44\testfile.c(2): fatal error C1083: Cannot open include file: 'dlfcn.h': No such file or directory
+
+Compiler stderr:
+ 
+Check usable header "dlfcn.h" : NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmplgrz0pa3
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmplgrz0pa3\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmplgrz0pa3\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ 
+        #include <execinfo.h>
+Compiler stdout:
+ testfile.c
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmplgrz0pa3\testfile.c(2): fatal error C1083: Cannot open include file: 'execinfo.h': No such file or directory
+
+Compiler stderr:
+ 
+Check usable header "execinfo.h" : NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpq8o66881
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpq8o66881\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpq8o66881\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ 
+        #include <sys/shm.h>
+Compiler stdout:
+ testfile.c
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpq8o66881\testfile.c(2): fatal error C1083: Cannot open include file: 'sys/shm.h': No such file or directory
+
+Compiler stderr:
+ 
+Check usable header "sys/shm.h" : NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp0q18uf1l
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp0q18uf1l\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp0q18uf1l\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ 
+        #include <cet.h>
+Compiler stdout:
+ testfile.c
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp0q18uf1l\testfile.c(2): fatal error C1083: Cannot open include file: 'cet.h': No such file or directory
+
+Compiler stderr:
+ 
+Check usable header "cet.h" : NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp90ny3acr
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp90ny3acr\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp90ny3acr\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ 
+        #include <pthread_np.h>
+Compiler stdout:
+ testfile.c
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp90ny3acr\testfile.c(2): fatal error C1083: Cannot open include file: 'pthread_np.h': No such file or directory
+
+Compiler stderr:
+ 
+Check usable header "pthread_np.h" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpfv67fuy8
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpfv67fuy8\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpfv67fuy8\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define strtof meson_disable_define_of_strtof
+        
+        #include <limits.h>
+        #undef strtof
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strtof (void);
+        
+        #if defined __stub_strtof || defined __stub___strtof
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return strtof ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+
+Compiler stderr:
+ 
+Checking for function "strtof" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpp60mm1_2
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpp60mm1_2\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpp60mm1_2\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define mkostemp meson_disable_define_of_mkostemp
+        
+        #include <limits.h>
+        #undef mkostemp
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char mkostemp (void);
+        
+        #if defined __stub_mkostemp || defined __stub___mkostemp
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return mkostemp ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _mkostemp referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpp60mm1_2\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "mkostemp" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmppnnr754p
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmppnnr754p\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmppnnr754p\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define timespec_get meson_disable_define_of_timespec_get
+        
+        #include <limits.h>
+        #undef timespec_get
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char timespec_get (void);
+        
+        #if defined __stub_timespec_get || defined __stub___timespec_get
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return timespec_get ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _timespec_get referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmppnnr754p\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "timespec_get" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpwsoqvr_1
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpwsoqvr_1\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpwsoqvr_1\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define memfd_create meson_disable_define_of_memfd_create
+        
+        #include <limits.h>
+        #undef memfd_create
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char memfd_create (void);
+        
+        #if defined __stub_memfd_create || defined __stub___memfd_create
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return memfd_create ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _memfd_create referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpwsoqvr_1\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "memfd_create" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp1xuwge_t
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp1xuwge_t\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp1xuwge_t\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define random_r meson_disable_define_of_random_r
+        
+        #include <limits.h>
+        #undef random_r
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char random_r (void);
+        
+        #if defined __stub_random_r || defined __stub___random_r
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return random_r ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _random_r referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp1xuwge_t\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "random_r" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpupl_oam0
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpupl_oam0\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpupl_oam0\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define flock meson_disable_define_of_flock
+        
+        #include <limits.h>
+        #undef flock
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char flock (void);
+        
+        #if defined __stub_flock || defined __stub___flock
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return flock ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _flock referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpupl_oam0\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "flock" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp48mcns1m
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp48mcns1m\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp48mcns1m\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define strtok_r meson_disable_define_of_strtok_r
+        
+        #include <limits.h>
+        #undef strtok_r
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strtok_r (void);
+        
+        #if defined __stub_strtok_r || defined __stub___strtok_r
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return strtok_r ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _strtok_r referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp48mcns1m\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "strtok_r" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpmotyl3dz
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpmotyl3dz\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpmotyl3dz\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define getrandom meson_disable_define_of_getrandom
+        
+        #include <limits.h>
+        #undef getrandom
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getrandom (void);
+        
+        #if defined __stub_getrandom || defined __stub___getrandom
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return getrandom ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _getrandom referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpmotyl3dz\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "getrandom" : NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpweg3i93y
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpweg3i93y\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpweg3i93y\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od -D_GNU_SOURCE 
+
+Code:
+ 
+        #include <errno.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef program_invocation_name
+                program_invocation_name;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\errno.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpweg3i93y\testfile.c(6): error C2065: 'program_invocation_name': undeclared identifier
+
+Compiler stderr:
+ 
+Header <errno.h> has symbol "program_invocation_name" : NO 
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp8uh1s30u
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp8uh1s30u\testfile.c /FoC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp8uh1s30u\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od 
+
+Code:
+ #include <sys/types.h>
+   #include <dirent.h>
+        void bar(void) {
+            struct dirent foo;
+            foo.d_type;
+
+        };
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\sys/types.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp8uh1s30u\testfile.c(2): fatal error C1083: Cannot open include file: 'dirent.h': No such file or directory
+
+Compiler stderr:
+ 
+Checking whether type "struct dirent" has member "d_type" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgyywcbui
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgyywcbui\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgyywcbui\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -DPACKAGE_VERSION="20.2.0" -DPACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues" -DENABLE_ST_OMX_BELLAGIO=0 -DENABLE_ST_OMX_TIZONIA=0 -DEGL_NO_X11 -D_WINDOWS -D_WIN32_WINNT=0x0601 -DWINVER=0x0601 -DPIPE_SUBSYSTEM_WINDOWS_USER -D_USE_MATH_DEFINES -DVC_EXTRALEAN -D_CRT_SECURE_NO_WARNINGS -D_CRT_SECURE_NO_DEPRECATE -D_SCL_SECURE_NO_WARNINGS -D_SCL_SECURE_NO_DEPRECATE -D_ALLOW_KEYWORD_MACROS -D_HAS_EXCEPTIONS=0 -DMISSING_64BIT_ATOMICS -DHAVE_STRTOF 
+
+Code:
+ 
+    #define _GNU_SOURCE
+    #include <stdlib.h>
+    #include <locale.h>
+    #ifdef HAVE_XLOCALE_H
+    #include <xlocale.h>
+    #endif
+    int main() {
+      locale_t loc = newlocale(LC_CTYPE_MASK, "C", NULL);
+      const char *s = "1.0";
+      char *end;
+      double d = strtod_l(s, end, loc);
+      float f = strtof_l(s, end, loc);
+      freelocale(loc);
+      return 0;
+    }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdlib.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_malloc.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_search.h
+Note: including file:   C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stddef.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdlib.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file: C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\locale.h
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgyywcbui\testfile.c(9): error C2065: 'locale_t': undeclared identifier
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgyywcbui\testfile.c(9): error C2146: syntax error: missing ';' before identifier 'loc'
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgyywcbui\testfile.c(9): error C2065: 'loc': undeclared identifier
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgyywcbui\testfile.c(9): error C2065: 'LC_CTYPE_MASK': undeclared identifier
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgyywcbui\testfile.c(12): error C2065: 'loc': undeclared identifier
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgyywcbui\testfile.c(13): error C2065: 'loc': undeclared identifier
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpgyywcbui\testfile.c(14): error C2065: 'loc': undeclared identifier
+
+Compiler stderr:
+ 
+Checking if "strtod has locale support" links: NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp35mq9zyj
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp35mq9zyj\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp35mq9zyj\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -Wl,-Bsymbolic 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ cl : Command line error D8021 : invalid numeric argument '/Wl,-Bsymbolic'
+
+Checking if "Bsymbolic" links: NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp9tzim50j
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp9tzim50j\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp9tzim50j\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -Wl,--gc-sections 
+
+Code:
+ static char unused() { return 5; } int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ cl : Command line error D8021 : invalid numeric argument '/Wl,--gc-sections'
+
+Checking if "gc-sections" links: NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmphka4awyj
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmphka4awyj\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmphka4awyj\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -Wl,--version-script=C:/Users/cotaa/Downloads/mesa-20.2.0.tar/mesa-20.2.0/mesa-20.2.0/build-support/conftest.map 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ cl : Command line error D8021 : invalid numeric argument '/Wl,--version-script=C:/Users/cotaa/Downloads/mesa-20.2.0.tar/mesa-20.2.0/mesa-20.2.0/build-support/conftest.map'
+
+Checking if "version-script" links: NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpdmcls2yt
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpdmcls2yt\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpdmcls2yt\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -Wl,--dynamic-list=C:/Users/cotaa/Downloads/mesa-20.2.0.tar/mesa-20.2.0/mesa-20.2.0/build-support/conftest.dyn 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ cl : Command line error D8021 : invalid numeric argument '/Wl,--dynamic-list=C:/Users/cotaa/Downloads/mesa-20.2.0.tar/mesa-20.2.0/mesa-20.2.0/build-support/conftest.dyn'
+
+Checking if "dynamic-list" links: NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpc_9zajfy
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpc_9zajfy\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpc_9zajfy\output.exe /nologo /showIncludes /nologo /showIncludes /Od /link -Wl,--build-id=sha1 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ testfile.c
+LINK : warning LNK4044: unrecognized option '/Wl,--build-id=sha1'; ignored
+
+Compiler stderr:
+ 
+Compiler for C supports link arguments -Wl,--build-id=sha1: NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiam_u2yi
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiam_u2yi\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiam_u2yi\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define dlopen meson_disable_define_of_dlopen
+        
+        #include <limits.h>
+        #undef dlopen
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dlopen (void);
+        
+        #if defined __stub_dlopen || defined __stub___dlopen
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return dlopen ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _dlopen referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpiam_u2yi\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "dlopen" : NO 
+Library dl found: NO
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpi_0boji8
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpi_0boji8\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpi_0boji8\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define dladdr meson_disable_define_of_dladdr
+        
+        #include <limits.h>
+        #undef dladdr
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dladdr (void);
+        
+        #if defined __stub_dladdr || defined __stub___dladdr
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return dladdr ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _dladdr referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpi_0boji8\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "dladdr" with dependency -ldl: NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpk6qud77c
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpk6qud77c\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpk6qud77c\output.exe /nologo /showIncludes /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define dl_iterate_phdr meson_disable_define_of_dl_iterate_phdr
+        
+        #include <limits.h>
+        #undef dl_iterate_phdr
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dl_iterate_phdr (void);
+        
+        #if defined __stub_dl_iterate_phdr || defined __stub___dl_iterate_phdr
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return dl_iterate_phdr ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+testfile.obj : error LNK2019: unresolved external symbol _dl_iterate_phdr referenced in function _main
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpk6qud77c\output.exe : fatal error LNK1120: 1 unresolved externals
+
+Compiler stderr:
+ 
+Checking for function "dl_iterate_phdr" : NO 
+Pkg-config binary for MachineChoice.HOST is not cached.
+None of 'PKG_CONFIG' are defined in the environment, not changing global flags.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: C:\ProgramData\chocolatey\bin\pkg-config.EXE (0.28)
+Determining dependency 'zlib' with pkg-config executable 'C:\\ProgramData\\chocolatey\\bin\\pkg-config.EXE'
+PKG_CONFIG_PATH: 
+Called `C:\ProgramData\chocolatey\bin\pkg-config.EXE --modversion zlib` -> 1
+
+CMake binary for MachineChoice.HOST is not cached
+None of 'CMAKE' are defined in the environment, not changing global flags.
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Found CMake: C:\Program Files\CMake\bin\cmake.EXE (3.18.2)
+None of 'CMAKE_PREFIX_PATH' are defined in the environment, not changing global flags.
+Extracting basic cmake information
+Try CMake generator: auto
+None of 'FC' are defined in the environment, not changing global flags.
+None of 'FFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'FC_LD' are defined in the environment, not changing global flags.
+None of 'F_LD' are defined in the environment, not changing global flags.
+Called `C:\Program Files\CMake\bin\cmake.EXE --trace-expand --trace-format=json-v1 --no-warn-unused-cli --trace-redirect=cmake_trace.txt .` in C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\cmake_ZLIB -> 0
+  -- Module search paths:    ['/Program Files', '/Program Files (x86)', '/Program Files/CMake']
+  -- CMake root:             C:/Program Files/CMake/share/cmake-3.18
+  -- CMake architectures:    []
+  -- CMake lib search paths: ['lib', 'lib32', 'lib64', 'libx32', 'share']
+
+Determining dependency 'ZLIB' with CMake executable 'C:\\Program Files\\CMake\\bin\\cmake.EXE'
+Try CMake generator: auto
+None of 'FC' are defined in the environment, not changing global flags.
+None of 'FFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'FC_LD' are defined in the environment, not changing global flags.
+None of 'F_LD' are defined in the environment, not changing global flags.
+Called `C:\Program Files\CMake\bin\cmake.EXE -DNAME=ZLIB -DARCHS= -DCOMPS= --trace-expand --trace-format=json-v1 --no-warn-unused-cli --trace-redirect=cmake_trace.txt .` in C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\cmake_ZLIB -> 0
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp8j3f8e9b
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp8j3f8e9b\testfile.cpp /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp8j3f8e9b\output.exe /nologo /showIncludes /nologo /showIncludes /Od zlib1zlib.lib /link 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ testfile.cpp
+LINK : fatal error LNK1181: cannot open input file 'zlib1zlib.lib'
+
+Compiler stderr:
+ 
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp6ei8kuu7
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp6ei8kuu7\testfile.cpp /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp6ei8kuu7\output.exe /nologo /showIncludes /nologo /showIncludes /Od 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ testfile.cpp
+Note: including file: C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdio.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdio.h
+Note: including file:   C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_stdio_config.h
+
+Compiler stderr:
+ 
+Program stdout:
+
+4
+
+Program stderr:
+
+
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp7c4mxls7
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp7c4mxls7\testfile.cpp /nologo /showIncludes /EP /nologo /showIncludes /EP /Od 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("zlib.h")
+          #error "Header 'zlib.h' could not be found"
+         #endif
+        #else
+         #include <zlib.h>
+        #endif
+Compiler stdout:
+ 
+
+        
+         
+          
+Compiler stderr:
+ testfile.cpp
+C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmp7c4mxls7\testfile.cpp(4): fatal error C1189: #error:  "Header 'zlib.h' could not be found"
+
+Run-time dependency zlib found: NO (tried pkgconfig and cmake)
+Looking for a fallback subproject for the dependency zlib
+Downloading zlib source from http://zlib.net/fossils/zlib-1.2.11.tar.gz
+Downloading zlib patch from https://github.com/mesonbuild/zlib/releases/download/1.2.11-2/zlib.zip
+
+Executing subproject zlib method meson 
+
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Project name: zlib
+Project version: 1.2.11
+C compiler for the build machine: cl (msvc 19.27.29111)
+C linker for the build machine: link link 14.27.29111.0
+C compiler for the host machine: cl (msvc 19.27.29111)
+C linker for the host machine: link link 14.27.29111.0
+None of 'WINDRES' are defined in the environment, not changing global flags.
+Windows resource compiler: Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
+Build targets in project: 2
+Subproject zlib finished.
+
+Dependency zlib from subproject subprojects\zlib found: YES 1.2.11
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libzstd' with pkg-config executable 'C:\\ProgramData\\chocolatey\\bin\\pkg-config.EXE'
+PKG_CONFIG_PATH: 
+Called `C:\ProgramData\chocolatey\bin\pkg-config.EXE --modversion libzstd` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+None of 'CMAKE_PREFIX_PATH' are defined in the environment, not changing global flags.
+Preliminary CMake check failed. Aborting.
+Run-time dependency libzstd found: NO (tried pkgconfig and cmake)
+Run-time dependency threads found: YES
+Library m found: NO
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libdrm' with pkg-config executable 'C:\\ProgramData\\chocolatey\\bin\\pkg-config.EXE'
+PKG_CONFIG_PATH: 
+Called `C:\ProgramData\chocolatey\bin\pkg-config.EXE --modversion libdrm` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+None of 'CMAKE_PREFIX_PATH' are defined in the environment, not changing global flags.
+Preliminary CMake check failed. Aborting.
+Run-time dependency libdrm found: NO (tried pkgconfig and cmake)
+CMake binary for MachineChoice.HOST is cached.
+None of 'CMAKE_PREFIX_PATH' are defined in the environment, not changing global flags.
+Preliminary CMake check failed. Aborting.
+llvm-config binary missing from cross or native file, or env var undefined.
+Trying a default llvm-config fallback at llvm-config
+Trying a default llvm-config fallback at llvm-config-9
+Trying a default llvm-config fallback at llvm-config90
+Trying a default llvm-config fallback at llvm-config-8
+Trying a default llvm-config fallback at llvm-config80
+Trying a default llvm-config fallback at llvm-config-7
+Trying a default llvm-config fallback at llvm-config70
+Trying a default llvm-config fallback at llvm-config-6.0
+Trying a default llvm-config fallback at llvm-config60
+Trying a default llvm-config fallback at llvm-config-5.0
+Trying a default llvm-config fallback at llvm-config50
+Trying a default llvm-config fallback at llvm-config-4.0
+Trying a default llvm-config fallback at llvm-config40
+Trying a default llvm-config fallback at llvm-config-3.9
+Trying a default llvm-config fallback at llvm-config39
+Trying a default llvm-config fallback at llvm-config-3.8
+Trying a default llvm-config fallback at llvm-config38
+Trying a default llvm-config fallback at llvm-config-3.7
+Trying a default llvm-config fallback at llvm-config37
+Trying a default llvm-config fallback at llvm-config-3.6
+Trying a default llvm-config fallback at llvm-config36
+Trying a default llvm-config fallback at llvm-config-3.5
+Trying a default llvm-config fallback at llvm-config35
+Trying a default llvm-config fallback at llvm-config-10
+Trying a default llvm-config fallback at llvm-config-devel
+Trying a default llvm-config fallback at llvm-config-32
+llvm-config found: NO need '>= 3.9.0'
+Run-time dependency LLVM found: NO (tried cmake and config-tool)
+Looking for a fallback subproject for the dependency llvm (modules: bitwriter, engine, mcdisassembler, mcjit, core, executionengine, scalaropts, transformutils, instcombine)
+Subproject directory not found and llvm.wrap file not found
+Subproject  subprojects\llvm is buildable: NO (disabling)
+Dependency llvm (modules: bitwriter, engine, mcdisassembler, mcjit, core, executionengine, scalaropts, transformutils, instcombine) from subproject subprojects\llvm found: NO
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'valgrind' with pkg-config executable 'C:\\ProgramData\\chocolatey\\bin\\pkg-config.EXE'
+PKG_CONFIG_PATH: 
+Called `C:\ProgramData\chocolatey\bin\pkg-config.EXE --modversion valgrind` -> 1
+
+Run-time dependency valgrind found: NO (tried pkgconfig)
+Program win_flex found: YES
+Program win_bison found: YES
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libunwind' with pkg-config executable 'C:\\ProgramData\\chocolatey\\bin\\pkg-config.EXE'
+PKG_CONFIG_PATH: 
+Called `C:\ProgramData\chocolatey\bin\pkg-config.EXE --modversion libunwind` -> 1
+
+CMake binary for MachineChoice.HOST is cached.
+None of 'CMAKE_PREFIX_PATH' are defined in the environment, not changing global flags.
+Preliminary CMake check failed. Aborting.
+Run-time dependency libunwind found: NO (tried pkgconfig and cmake)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpupeg1wmm
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpupeg1wmm\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpupeg1wmm\output.exe /nologo /showIncludes /nologo /showIncludes /Od sensors.lib /link 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ testfile.c
+LINK : fatal error LNK1181: cannot open input file 'sensors.lib'
+
+Compiler stderr:
+ 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmph2clrl59
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmph2clrl59\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmph2clrl59\output.exe /nologo /showIncludes /nologo /showIncludes /Od 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdio.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vcruntime.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\sal.h
+Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\concurrencysal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vadefs.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdio.h
+Note: including file:   C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_stdio_config.h
+
+Compiler stderr:
+ 
+Program stdout:
+
+4
+
+Program stderr:
+
+
+Library sensors found: NO
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpn_tu7bwy
+Command line:  cl C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpn_tu7bwy\testfile.c /FeC:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\tmpn_tu7bwy\output.exe /nologo /showIncludes /nologo /showIncludes /Od /link -Wl,--gc-sections 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ testfile.c
+LINK : warning LNK4044: unrecognized option '/Wl,--gc-sections'; ignored
+
+Compiler stderr:
+ 
+Compiler for C supports link arguments -Wl,--gc-sections: NO 
+Program dumpbin found: YES
+Program symbols-check.py found: YES
+Program install_megadrivers.py found: YES
+Message: Configuration summary:
+        
+        prefix:          c:/
+        libdir:          lib
+        includedir:      include
+        
+        OpenGL:          yes (ES1: no ES2: no)
+        OSMesa:          no
+        
+        EGL:             no
+        GBM:             no
+        
+        Vulkan drivers:  no
+        
+        llvm:            no
+        
+        Gallium drivers: swrast
+        Gallium st:      mesa
+        HUD lmsensors:   no
+        
+        Shared-glapi:    no
+
+Build targets in project: 92
+
+mesa 20.2.0
+
+  Subprojects
+    llvm: NO Subproject directory not found and llvm.wrap file not found
+    zlib: YES
+
+Generating vcxproj Windows resource for file 'subprojects_zlib-1.2.11_win32_zlib1.rc'.
+Generating vcxproj z.
+Generating vcxproj glsl_util.
+Generating vcxproj git_sha1.h.
+Generating vcxproj gtest.
+Generating vcxproj getopt.
+Generating vcxproj u_format_table.c.
+Generating vcxproj mesa_format.
+Generating vcxproj format_srgb.
+Generating vcxproj mesa_util.
+Generating vcxproj xmlconfig.
+Generating vcxproj glapi_mapi_tmp.h.
+Generating vcxproj glprocs.h.
+Generating vcxproj glapitemp.h.
+Generating vcxproj glapitable.h.
+Generating vcxproj glapi_gentable.c.
+Generating vcxproj enums.c.
+Generating vcxproj api_exec.c.
+Generating vcxproj marshal_generated0.c.
+Generating vcxproj marshal_generated1.c.
+Generating vcxproj marshal_generated2.c.
+Generating vcxproj marshal_generated3.c.
+Generating vcxproj marshal_generated4.c.
+Generating vcxproj marshal_generated5.c.
+Generating vcxproj marshal_generated6.c.
+Generating vcxproj marshal_generated7.c.
+Generating vcxproj indirect.c.
+Generating vcxproj indirect.h.
+Generating vcxproj indirect_init.c.
+Generating vcxproj indirect_size.h.
+Generating vcxproj indirect_size.c.
+Generating vcxproj glapi_x86.S.
+Generating vcxproj glapi_x86-64.S.
+Generating vcxproj glapi_sparc.S.
+Generating vcxproj glapi_static.
+Generating vcxproj ir_expression_operation.h.
+Generating vcxproj compiler.
+Generating vcxproj vtn_gather_types.c.
+Generating vcxproj spirv_info.c.
+Generating vcxproj nir_builder_opcodes.h.
+Generating vcxproj nir_constant_expressions.c.
+Generating vcxproj nir_opcodes.h.
+Generating vcxproj nir_opcodes.c.
+Generating vcxproj nir_opt_algebraic.c.
+Generating vcxproj nir_intrinsics.h.
+Generating vcxproj nir_intrinsic.c.
+Generating vcxproj nir.
+Generating vcxproj spirv2nir.
+Generating vcxproj glcpp-parse.[ch].
+Generating vcxproj glcpp-lex.c.
+Generating vcxproj glcpp.
+Generating vcxproj glcpp_standalone.
+Generating vcxproj glcpp.
+Generating vcxproj glsl_parser.
+Generating vcxproj glsl_lexer_cpp.
+Generating vcxproj ir_expression_operation_constant.h.
+Generating vcxproj ir_expression_operation_strings.h.
+Generating vcxproj float64_glsl.h.
+Generating vcxproj glsl.
+Generating vcxproj glsl_standalone.
+Generating vcxproj glsl_compiler.
+Generating vcxproj glsl_test.
+Generating vcxproj mesa_lex.
+Generating vcxproj program_parse_tab.[ch].
+Generating vcxproj dispatch.h.
+Generating vcxproj marshal_generated.h.
+Generating vcxproj remap_helper.h.
+Generating vcxproj format_fallback.c.
+Generating vcxproj get_hash.h.
+Generating vcxproj format_info.h.
+Generating vcxproj format_pack.c.
+Generating vcxproj format_unpack.c.
+Generating vcxproj mesa_common.
+Generating vcxproj mesa_classic.
+Generating vcxproj mesa_gallium.
+Generating vcxproj dricommon.
+Generating vcxproj megadriver_stub.
+Generating vcxproj loader.
+Generating vcxproj u_indices_gen.c.
+Generating vcxproj u_unfilled_gen.c.
+Generating vcxproj gallium.
+Generating vcxproj galliumvl_stub.
+Generating vcxproj galliumvl.
+Generating vcxproj galliumvlwinsys.
+Generating vcxproj pipe_loader_static.
+Generating vcxproj pipe_loader_dynamic.
+Generating vcxproj ws_null.
+Generating vcxproj wsgdi.
+Generating vcxproj wsw.
+Generating vcxproj softpipe.
+Generating vcxproj wgl.
+Generating vcxproj opengl32.
+None of 'STRIP' are defined in the environment, not changing global flags.
+None of 'STRIP' are defined in the environment, not changing global flags.

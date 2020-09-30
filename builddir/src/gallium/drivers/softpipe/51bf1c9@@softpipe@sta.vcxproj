@@ -1,0 +1,296 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debugoptimized|ARM64">
+			<Configuration>debugoptimized</Configuration>
+			<Platform>ARM64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="debugoptimized|Win32">
+			<Configuration>debugoptimized</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{E4F20D8A-0EA7-4730-9D53-3667A6CEBE19}</ProjectGuid>
+		<Keyword>Win32Proj</Keyword>
+		<RootNamespace>softpipe</RootNamespace>
+		<Platform>Win32</Platform>
+		<ProjectName>softpipe</ProjectName>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<PlatformToolset>v142</PlatformToolset>
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<WarningLevel>Level2</WarningLevel>
+			<InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions/>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+			<AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)libsoftpipe.a</OutputFile>
+			<SubSystem>Windows</SubSystem>
+			<ProgramDataBaseFileName>$(OutDir}softpipe.pdb</ProgramDataBaseFileName>
+			<TargetMachine>MachineX86</TargetMachine>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+		</Link>
+	</ItemDefinitionGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>51bf1c9@@softpipe@sta\</IntDir>
+		<TargetName>libsoftpipe</TargetName>
+		<TargetExt>.a</TargetExt>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\..\..\..\..\src\gallium\drivers/softpipe\meson.build"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_buffer.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_clear.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_context.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_fence.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_flush.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_fs.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_image.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_limits.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_prim_vbuf.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_public.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_quad_depth_test_tmp.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_quad.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_quad_pipe.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_query.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_screen.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_setup.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_state.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_surface.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_tex_sample.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_tex_tile_cache.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_texture.h"/>
+		<CLInclude Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_tile_cache.h"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_buffer.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_buffer.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_clear.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_clear.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_context.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_context.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_compute.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_compute.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_draw_arrays.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_draw_arrays.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_fence.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_fence.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_flush.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_flush.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_fs_exec.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_fs_exec.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_image.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_image.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_prim_vbuf.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_prim_vbuf.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_quad_blend.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_quad_blend.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_quad_depth_test.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_quad_depth_test.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_quad_fs.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_quad_fs.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_quad_pipe.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_quad_pipe.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_quad_stipple.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_quad_stipple.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_query.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_query.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_screen.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_screen.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_setup.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_setup.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_state_blend.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_state_blend.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_state_clip.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_state_clip.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_state_derived.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_state_derived.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_state_image.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_state_image.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_state_rasterizer.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_state_rasterizer.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_state_sampler.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_state_sampler.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_state_shader.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_state_shader.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_state_so.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_state_so.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_state_surface.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_state_surface.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_state_vertex.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_state_vertex.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_surface.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_surface.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_tex_sample.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_tex_sample.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_tex_tile_cache.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_tex_tile_cache.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_texture.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_texture.c.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\..\..\src\gallium\drivers/softpipe\sp_tile_cache.c">
+			<AdditionalOptions>&quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>51bf1c9@@softpipe@sta;.;..\..\..\..\..\src\gallium\drivers/softpipe;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)sp_tile_cache.c.obj</ObjectFileName>
+		</CLCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\REGEN.vcxproj">
+			<Project>{40570251-823D-435D-A3AE-065BC6D5B97C}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

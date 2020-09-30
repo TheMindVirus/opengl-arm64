@@ -1,0 +1,2 @@
+﻿  Performing Custom Build Tools
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(234,5): warning MSB8065: Custom build for item "C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\custom_target.rule" succeeded, but specified output "c:\users\cotaa\downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\outofdate.file" has not been created. This may cause incremental build to work incorrectly.

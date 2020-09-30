@@ -1,0 +1,10 @@
+^C:\USERS\COTAA\DOWNLOADS\MESA-20.2.0.TAR\MESA-20.2.0\MESA-20.2.0\BUILDDIR\MESON-PRIVATE\CUSTOM_TARGET.RULE
+setlocal
+"C:\Python38\Scripts\meson" "--internal" "exe" "--unpickle" "C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\meson_exe_rc.EXE_57256a9e4f8b0a8f4c1ee07c6bb42fa04363c18b.dat"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

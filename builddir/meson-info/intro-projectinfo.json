@@ -1,0 +1,1 @@
+{"version": "20.2.0", "descriptive_name": "mesa", "subproject_dir": "subprojects", "subprojects": [{"name": "zlib", "version": "1.2.11", "descriptive_name": "zlib"}]}

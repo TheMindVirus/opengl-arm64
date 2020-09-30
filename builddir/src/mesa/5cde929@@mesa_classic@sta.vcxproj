@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debugoptimized|ARM64">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debugoptimized|Win32">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3FD3DE92-96C9-4AB5-8703-025D94C2D800}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>mesa_classic</RootNamespace>
+    <Platform>Win32</Platform>
+    <ProjectName>mesa_classic</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level2</WarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions />
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\src\mesa\libmesa_common.a;..\..\src\compiler\glsl\libglsl.a;..\..\src\compiler\glsl\glcpp\libglcpp.a;..\..\src\util\libmesa_util.a;..\..\src\util\format\libmesa_format.a;..\..\subprojects\zlib-1.2.11\z.lib;..\..\src\compiler\nir\libnir.a;..\..\src\compiler\libcompiler.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)libmesa_classic.a</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <ProgramDataBaseFileName>$(OutDir}mesa_classic.pdb</ProgramDataBaseFileName>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>.\</OutDir>
+    <IntDir>5cde929@@mesa_classic@sta\</IntDir>
+    <TargetName>libmesa_classic</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\mesa\meson.build" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\..\src\mesa\math/m_clip_tmp.h" />
+    <CLInclude Include="..\..\..\src\mesa\math/m_copy_tmp.h" />
+    <CLInclude Include="..\..\..\src\mesa\math/m_dotprod_tmp.h" />
+    <CLInclude Include="..\..\..\src\mesa\math/m_norm_tmp.h" />
+    <CLInclude Include="..\..\..\src\mesa\math/m_xform.h" />
+    <CLInclude Include="..\..\..\src\mesa\math/m_xform_tmp.h" />
+    <CLInclude Include="..\..\..\src\mesa\tnl/t_context.h" />
+    <CLInclude Include="..\..\..\src\mesa\tnl/tnl.h" />
+    <CLInclude Include="..\..\..\src\mesa\tnl/t_pipeline.h" />
+    <CLInclude Include="..\..\..\src\mesa\tnl/t_split.h" />
+    <CLInclude Include="..\..\..\src\mesa\tnl/t_vb_cliptmp.h" />
+    <CLInclude Include="..\..\..\src\mesa\tnl/t_vb_lighttmp.h" />
+    <CLInclude Include="..\..\..\src\mesa\tnl/t_vb_rendertmp.h" />
+    <CLInclude Include="..\..\..\src\mesa\tnl/t_vertex.h" />
+    <CLInclude Include="..\..\..\src\mesa\tnl/t_vp_build.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_aaline.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_aalinetemp.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_aatriangle.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_aatritemp.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_alpha.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_atifragshader.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_blend.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_chan.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_context.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_depth.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast_setup/ss_tritmp.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast_setup/ss_vb.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast_setup/swrast_setup.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_feedback.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_fog.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_fragprog.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_lines.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_linetemp.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_logic.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_masking.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_points.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_renderbuffer.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_span.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_stencil.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_texcombine.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_texfetch.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_texfetch_tmp.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_texfilter.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_triangle.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_tritemp.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/swrast.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast/s_zoom.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast_setup/ss_context.h" />
+    <CLInclude Include="..\..\..\src\mesa\swrast_setup/ss_triangle.h" />
+    <CLInclude Include="..\..\..\src\mesa\drivers/common/driverfuncs.h" />
+    <CLInclude Include="..\..\..\src\mesa\drivers/common/meta.h" />
+    <CLInclude Include="..\..\..\src\mesa\x86/rtasm/x86sse.h" />
+    <CLInclude Include="..\..\src\compiler\nir\nir_opcodes.h" />
+    <CLInclude Include="..\..\src\compiler\nir\nir_builder_opcodes.h" />
+    <CLInclude Include="..\..\src\compiler\nir\nir_intrinsics.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLCompile Include="..\..\..\src\mesa\math/m_xform.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)math_m_xform.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_context.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_context.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_draw.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_draw.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_pipeline.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_pipeline.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_rebase.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_rebase.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_split.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_split.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_split_copy.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_split_copy.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_split_inplace.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_split_inplace.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_vb_fog.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_vb_fog.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_vb_light.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_vb_light.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_vb_normals.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_vb_normals.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_vb_points.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_vb_points.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_vb_program.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_vb_program.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_vb_render.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_vb_render.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_vb_texgen.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_vb_texgen.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_vb_texmat.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_vb_texmat.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_vb_vertex.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_vb_vertex.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_vertex.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_vertex.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_vertex_generic.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_vertex_generic.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_vertex_sse.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_vertex_sse.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\tnl/t_vp_build.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)tnl_t_vp_build.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_aaline.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_aaline.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_aatriangle.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_aatriangle.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_alpha.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_alpha.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_atifragshader.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_atifragshader.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_bitmap.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_bitmap.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_blend.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_blend.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_blit.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_blit.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_clear.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_clear.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_context.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_context.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_copypix.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_copypix.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_depth.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_depth.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_drawpix.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_drawpix.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_feedback.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_feedback.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_fog.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_fog.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_fragprog.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_fragprog.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_lines.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_lines.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_logic.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_logic.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_masking.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_masking.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_points.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_points.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_renderbuffer.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_renderbuffer.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_span.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_span.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_stencil.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_stencil.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_texcombine.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_texcombine.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_texfetch.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_texfetch.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_texfilter.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_texfilter.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_texrender.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_texrender.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_texture.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_texture.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_triangle.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_triangle.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast/s_zoom.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_s_zoom.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast_setup/ss_context.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_setup_ss_context.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\swrast_setup/ss_triangle.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)swrast_setup_ss_triangle.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\drivers/common/driverfuncs.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)drivers_common_driverfuncs.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\drivers/common/meta_blit.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)drivers_common_meta_blit.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\drivers/common/meta_generate_mipmap.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)drivers_common_meta_generate_mipmap.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\drivers/common/meta.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)drivers_common_meta.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\x86/x86_xform.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)x86_x86_xform.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\x86/3dnow.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)x86_3dnow.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\x86/sse.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)x86_sse.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\x86/rtasm/x86sse.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)x86_rtasm_x86sse.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\sparc/sparc.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)sparc_sparc.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\mesa\x86-64/x86-64.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>5cde929@@mesa_classic@sta;.;..\..\..\src\mesa;..\..\..\include\.;..\..\include;..\..\..\src\.;..;..\..\..\src\mapi;..\mapi;..\..\..\src\gallium/include;..\gallium\include;..\..\..\src\gallium/auxiliary;..\gallium\auxiliary;..\..\..\src\mesa\main;main;..\..\..\src\compiler\nir\.;..\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)x86-64_x86-64.c.obj</ObjectFileName>
+    </CLCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\REGEN.vcxproj">
+      <Project>{40570251-823D-435D-A3AE-065BC6D5B97C}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include=".\5cde929@@mesa_common@sta.vcxproj">
+      <Project>{8C110517-56D6-42D3-AAEE-6BE80A124B69}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\compiler\glsl\1a27c3f@@glsl@sta.vcxproj">
+      <Project>{EC030A74-1781-41B1-9F3D-9C3F2DF56015}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\compiler\nir\c6d7332@@nir_opcodes.h@cus.vcxproj">
+      <Project>{30265070-CB4A-4A52-ACD2-0AC7EBAE50A4}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\compiler\nir\c6d7332@@nir_builder_opcodes.h@cus.vcxproj">
+      <Project>{57DDAAF2-6E7B-4247-B83E-AA695831BBEB}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\compiler\nir\c6d7332@@nir_intrinsics.h@cus.vcxproj">
+      <Project>{07009004-1BF9-46C3-9611-F23B95336615}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

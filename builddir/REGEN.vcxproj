@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debugoptimized|ARM64">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debugoptimized|Win32">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{40570251-823D-435D-A3AE-065BC6D5B97C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>REGEN</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>.\</OutDir>
+    <IntDir>regen-temp\</IntDir>
+    <TargetName>REGEN</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFilename>%(Filename)_i.c</InterfaceIdentifierFilename>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\regen.rule">
+      <Message>Checking whether solution needs to be regenerated.</Message>
+      <Command>setlocal
+call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" x86 &gt; NUL
+"C:\Python38\Scripts\meson" "--internal" "regencheck" "C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Outputs>C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\meson-private\regen.stamp</Outputs>
+      <AdditionalInputs>..\bin\meson_get_version.py;..\meson.build;C:\Python38\python.exe;..\meson_options.txt;..\subprojects\zlib-1.2.11\meson.build;..\include\meson.build;..\bin\meson.build;..\src\meson.build;..\src\gtest\meson.build;..\src\getopt\meson.build;..\src\android_stub\meson.build;..\src\util\meson.build;..\src\util\format\meson.build;..\src\mapi\meson.build;..\src\mapi\glapi\meson.build;..\src\mapi\glapi\gen\meson.build;..\src\compiler\meson.build;..\src\compiler\spirv\meson.build;..\src\compiler\nir\meson.build;..\src\compiler\glsl\meson.build;..\src\compiler\glsl\glcpp\meson.build;..\src\mesa\meson.build;..\src\mesa\program\meson.build;..\src\mesa\main\meson.build;..\src\mesa\drivers/dri\meson.build;..\src\mesa\drivers/dri\common\meson.build;..\src\loader\meson.build;..\src\gallium\meson.build;..\src\gallium\auxiliary\meson.build;..\src\gallium\auxiliary/pipe-loader\meson.build;..\src\gallium\winsys/sw/null\meson.build;..\src\gallium\winsys/sw/gdi\meson.build;..\src\gallium\winsys/sw/wrapper\meson.build;..\src\gallium\drivers/softpipe\meson.build;..\src\gallium\frontends/wgl\meson.build;..\src\gallium\targets/libgl-gdi\meson.build;meson-private/coredata.dat</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

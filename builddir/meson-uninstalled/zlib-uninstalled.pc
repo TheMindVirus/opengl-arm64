@@ -1,0 +1,8 @@
+prefix=C:/Users/cotaa/Downloads/mesa-20.2.0.tar/mesa-20.2.0/mesa-20.2.0/builddir
+srcdir=C:/Users/cotaa/Downloads/mesa-20.2.0.tar/mesa-20.2.0/mesa-20.2.0
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+Libs: -L${prefix}/C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\subprojects\zlib-1.2.11 -lz
+Cflags: -I${prefix}\subprojects\zlib-1.2.11 -I${srcdir}\subprojects\zlib-1.2.11

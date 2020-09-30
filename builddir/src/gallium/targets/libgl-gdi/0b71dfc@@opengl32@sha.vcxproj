@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debugoptimized|ARM64">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debugoptimized|Win32">
+      <Configuration>debugoptimized</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A5830E87-BAC0-488D-BC82-8FA041AAE4B3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>opengl32</RootNamespace>
+    <Platform>Win32</Platform>
+    <ProjectName>opengl32</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GALLIUM_SOFTPIPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level2</WarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions />
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalOptions>/fixed:no /dynamicbase /nxcompat /incremental:no /WHOLEARCHIVE:..\..\..\..\src\gallium\frontends/wgl\libwgl.a %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\..\..\src\gallium\auxiliary\libgallium.a;..\..\..\..\src\compiler\nir\libnir.a;..\..\..\..\src\compiler\libcompiler.a;..\..\..\..\src\util\libmesa_util.a;..\..\..\..\src\util\format\libmesa_format.a;..\..\..\..\subprojects\zlib-1.2.11\z.lib;..\..\..\..\src\compiler\glsl\libglsl.a;..\..\..\..\src\compiler\glsl\glcpp\libglcpp.a;..\..\..\..\src\mesa\libmesa_gallium.a;..\..\..\..\src\mesa\libmesa_common.a;..\..\..\..\src\gallium\winsys/sw/gdi\libwsgdi.a;..\..\..\..\src\mapi\glapi\libglapi_static.a;..\..\..\..\src\gallium\drivers/softpipe\libsoftpipe.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)opengl32.dll</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>opengl32.lib</ImportLibrary>
+      <ModuleDefinitionFile>..\..\..\..\..\src\gallium\targets/libgl-gdi\../../frontends/wgl/opengl32.def</ModuleDefinitionFile>
+      <ProgramDataBaseFileName>$(OutDir}opengl32.pdb</ProgramDataBaseFileName>
+      <TargetMachine>NotSet</TargetMachine>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>.\</OutDir>
+    <IntDir>0b71dfc@@opengl32@sha\</IntDir>
+    <TargetName>opengl32</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\frontends\wgl\945cc3d@@wgl@sta.vcxproj">
+      <Project>{6F286030-E895-4B41-8836-FE68FC5A8EBE}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\src\gallium\targets/libgl-gdi\meson.build" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\..\..\..\src\compiler\nir\nir_opcodes.h" />
+    <CLInclude Include="..\..\..\..\src\compiler\nir\nir_builder_opcodes.h" />
+    <CLInclude Include="..\..\..\..\src\compiler\nir\nir_intrinsics.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLCompile Include="..\..\..\..\..\src\gallium\targets/libgl-gdi\libgl_gdi.c">
+      <AdditionalOptions>"/wd4018" "/wd4056" "/wd4244" "/wd4267" "/wd4305" "/wd4351" "/wd4756" "/wd4800" "/wd4996" "/wd4291" "/wd4146" "/wd4200" "/wd4624" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION="20.2.0";PACKAGE_BUGREPORT="https://gitlab.freedesktop.org/mesa/mesa/-/issues";ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>0b71dfc@@opengl32@sha;.;..\..\..\..\..\src\gallium\targets/libgl-gdi;..\..\..\..\..\include\.;..\..\..\..\include;..\..\..\..\..\src\.;..\..\..;..\..\..\..\..\src\mapi;..\..\..\mapi;..\..\..\..\..\src\mesa;..\..\..\mesa;..\..\..\..\..\src\gallium/include;..\..\include;..\..\..\..\..\src\gallium/auxiliary;..\..\auxiliary;..\..\..\..\..\src\gallium\frontends/wgl\.;..\..\frontends\wgl;..\..\..\..\..\src\gallium\winsys/sw;..\..\winsys\sw;..\..\..\..\..\src\gallium\drivers;..\..\drivers;..\..\..\..\..\src\compiler\nir\.;..\..\..\compiler\nir;..\..\..\..\..\src\util\.;..\..\..\util;..\..\..\..\..\subprojects\zlib-1.2.11\.;..\..\..\..\subprojects\zlib-1.2.11;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)libgl_gdi.c.obj</ObjectFileName>
+    </CLCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\REGEN.vcxproj">
+      <Project>{40570251-823D-435D-A3AE-065BC6D5B97C}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\auxiliary\962fc52@@gallium@sta.vcxproj">
+      <Project>{16A5F58F-5737-4635-A985-67C708E55D2E}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\compiler\glsl\1a27c3f@@glsl@sta.vcxproj">
+      <Project>{EC030A74-1781-41B1-9F3D-9C3F2DF56015}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\mesa\5cde929@@mesa_gallium@sta.vcxproj">
+      <Project>{AA71934B-2287-4EB5-9280-4847A153F9AB}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\winsys\sw\gdi\f66e3e9@@wsgdi@sta.vcxproj">
+      <Project>{C788DABC-0EDD-4449-A780-99A627571649}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\mapi\glapi\175994c@@glapi_static@sta.vcxproj">
+      <Project>{89E5223B-AB8A-43A2-8A0A-BD132C3BE668}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\compiler\nir\c6d7332@@nir@sta.vcxproj">
+      <Project>{81CA9E30-3909-401B-9EE5-19D9A52641BD}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\util\719bc35@@mesa_util@sta.vcxproj">
+      <Project>{D12B3F7F-31AD-4FAF-BBC1-C91B8C856727}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\subprojects\zlib-1.2.11\b0b5972@@z@sha.vcxproj">
+      <Project>{E879E5D1-A8F2-45BD-A2A5-8934ADBAF5D2}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\drivers\softpipe\51bf1c9@@softpipe@sta.vcxproj">
+      <Project>{E4F20D8A-0EA7-4730-9D53-3667A6CEBE19}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\compiler\nir\c6d7332@@nir_opcodes.h@cus.vcxproj">
+      <Project>{30265070-CB4A-4A52-ACD2-0AC7EBAE50A4}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\compiler\nir\c6d7332@@nir_builder_opcodes.h@cus.vcxproj">
+      <Project>{57DDAAF2-6E7B-4247-B83E-AA695831BBEB}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\compiler\nir\c6d7332@@nir_intrinsics.h@cus.vcxproj">
+      <Project>{07009004-1BF9-46C3-9611-F23B95336615}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

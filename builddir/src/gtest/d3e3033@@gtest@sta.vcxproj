@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debugoptimized|ARM64">
+			<Configuration>debugoptimized</Configuration>
+			<Platform>ARM64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="debugoptimized|Win32">
+			<Configuration>debugoptimized</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{65A780C5-431C-4A87-948C-C25ECDC3FDE6}</ProjectGuid>
+		<Keyword>Win32Proj</Keyword>
+		<RootNamespace>gtest</RootNamespace>
+		<Platform>Win32</Platform>
+		<ProjectName>gtest</ProjectName>
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<PlatformToolset>v142</PlatformToolset>
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
+		<UseDebugLibraries>false</UseDebugLibraries>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+			<ExceptionHandling>Sync</ExceptionHandling>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<WarningLevel>Level2</WarningLevel>
+			<InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions/>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+			<AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)libgtest.a</OutputFile>
+			<SubSystem>Windows</SubSystem>
+			<ProgramDataBaseFileName>$(OutDir}gtest.pdb</ProgramDataBaseFileName>
+			<TargetMachine>MachineX86</TargetMachine>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+		</Link>
+	</ItemDefinitionGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>d3e3033@@gtest@sta\</IntDir>
+		<TargetName>libgtest</TargetName>
+		<TargetExt>.a</TargetExt>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\..\..\src\gtest\meson.build"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLCompile Include="..\..\..\src\gtest\src/gtest-all.cc">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++14&quot; &quot;/permissive-&quot; &quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>d3e3033@@gtest@sta;.;..\..\..\src\gtest;..\..\..\src\gtest\include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)src_gtest-all.cc.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\gtest\src/gtest_main.cc">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++14&quot; &quot;/permissive-&quot; &quot;/wd4018&quot; &quot;/wd4056&quot; &quot;/wd4244&quot; &quot;/wd4267&quot; &quot;/wd4305&quot; &quot;/wd4351&quot; &quot;/wd4756&quot; &quot;/wd4800&quot; &quot;/wd4996&quot; &quot;/wd4291&quot; &quot;/wd4146&quot; &quot;/wd4200&quot; &quot;/wd4624&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;PACKAGE_VERSION=&quot;20.2.0&quot;;PACKAGE_BUGREPORT=&quot;https://gitlab.freedesktop.org/mesa/mesa/-/issues&quot;;ENABLE_ST_OMX_BELLAGIO=0;ENABLE_ST_OMX_TIZONIA=0;EGL_NO_X11;_WINDOWS;_WIN32_WINNT=0x0601;WINVER=0x0601;PIPE_SUBSYSTEM_WINDOWS_USER;_USE_MATH_DEFINES;VC_EXTRALEAN;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_ALLOW_KEYWORD_MACROS;_HAS_EXCEPTIONS=0;MISSING_64BIT_ATOMICS;HAVE_STRTOF;HAVE_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>d3e3033@@gtest@sta;.;..\..\..\src\gtest;..\..\..\src\gtest\include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)src_gtest_main.cc.obj</ObjectFileName>
+		</CLCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:\Users\cotaa\Downloads\mesa-20.2.0.tar\mesa-20.2.0\mesa-20.2.0\builddir\REGEN.vcxproj">
+			<Project>{40570251-823D-435D-A3AE-065BC6D5B97C}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>
