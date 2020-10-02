@@ -1,5 +1,5 @@
-  <OutputPath Condition=" '$(Platform)' == 'ARM' ">$(SolutionDir)ARM-$(Configuration)\Tools\</OutputPath>
-	<OutputPath Condition=" '$(Platform)' == 'ARM64' ">$(SolutionDir)ARM64-$(Configuration)\Tools\</OutputPath>
+    <OutputPath Condition=" '$(Platform)' == 'ARM' ">$(SolutionDir)ARM-$(Configuration)\Tools\</OutputPath>
+    <OutputPath Condition=" '$(Platform)' == 'ARM64' ">$(SolutionDir)ARM64-$(Configuration)\Tools\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
     <PlatformTarget>ARM</PlatformTarget>
