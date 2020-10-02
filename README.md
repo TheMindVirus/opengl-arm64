@@ -20,8 +20,7 @@ Please see the output at: **./builddir/src/gallium/targets/libgl-gdi/opengl32.dl
     <Configuration>debugoptimized</Configuration>
     <Platform>ARM64</Platform>
   </ProjectConfiguration>
-```
-(Please see ./C#cprojFix for the C# version of this)
+```(Please see ./C#csprojFix for the C# version of this)
 
 #### Target Architecture for some of the projects in the main solution folder have been deliberately set to x86...
 ```
